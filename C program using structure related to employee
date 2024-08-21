@@ -1,0 +1,23 @@
+#include<stdio.h>
+struct employee
+{
+char name[20],add[20];
+int salary;
+};
+int main()
+{
+struct employee emp[10];
+int i;
+printf("Enter name,post and salary ");
+for(i=0; i<10; i++)
+{
+scanf("%s %s %d",emp[i].name,emp[i].add,&emp[i].salary);
+}
+printf("Name: \t Post: \t Salary: \t\n");
+printf("-----------------------------------\n");
+for(i=0;i<=10;i++)
+{
+printf("%s\t %s\t %d\t\n", emp[i].name,emp[i].add,emp[i].salary);
+}
+return 0;
+} 
